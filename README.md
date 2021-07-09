@@ -38,7 +38,7 @@ Game Description: a First-Person Shooter game which you can use your weapons (AK
       * <img src="Images/Sprint_Left.png" height="320px"></img>
       * <img src="Images/Sprint_Right.png" height="320px"></img>
       * <img src="Images/Sprint_Straight.png" height="320px"></img>
-      * <img src="Images/Sprint_Right.png" height="320px"></img>
+      * <img src="Images/IDLE.png" height="320px"></img>
 
   * **State Machine**
     * There are multiple layers in the player state machine.
