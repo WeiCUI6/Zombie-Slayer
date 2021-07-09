@@ -19,63 +19,45 @@ Game Description: a First-Person Shooter game which you can use your weapons (AK
   * A **gun (AK-47)**: is always your first equipped gun, and the icon is shown on the bottem right corner
   * **Ammo Count**: on bottem right corner
   * A **shooting sight** is always in the center of the screen
-  <img src="Images/3.jpg" style="width:500px"></img>
+  <img src="Images/Interface.png" style="width:500px"></img>
   
   * Player models
-  * All the original models and their animations were found from **[Mixamo](https://www.mixamo.com/)**, which is a pretty good game model website run by Adobe
-  * There are three types of player **models**:
-    * **Policeman**: a policeman-like model with yellow skin
-    * **RobotX**: a robot-like model with dark pink skin
-    * **RobotY**: a robot-like model with dark blue skin
-    * <img src="Images/9.jpg" height="200px"></img> <img src="Images/11.jpg" height="200px"></img> <img src="Images/10.jpg" height="200px"></img>
+  * There are two types of player **models**:
+    * **Policeman**: a **SWAT** model
+    * **Zombie**: a mutant policeman-like zombie
+    * <img src="Images/Player_Model.png" height="320px"></img> <img src="Images/Zombie_Model.png" height="320px"></img>
 
   * **Animations**:
     * **Walk** towards four different directions
-    * **Run** towards four different directions
-    * **Jump** without affecting upper part body (**achieved by unity3d body mask**)
-    * **Shoot** without affecting lower part body (**achieved by unity3d body mask**)
-    * **Unity Blend Tree**
+    * **Sprint** towards four different directions
+    * **Jump** without affecting upper part body
+    * **Shoot** without affecting lower part body
       * This makes the player walk or run more naturally. It uses interpolation function to map different combinations of user input to different animations.
-      * ![img](Images/4.jpg)
+      * <img src="Images/Hold_Control.png" height="320px"></img>
+      * <img src="Images/Hold_Walk.png" height="320px"></img>
+      * <img src="Images/Sprint_Left.png" height="320px"></img>
+      * <img src="Images/Sprint_Right.png" height="320px"></img>
+      * <img src="Images/Sprint_Straight.png" height="320px"></img>
+      * <img src="Images/Sprint_Right.png" height="320px"></img>
 
   * **State Machine**
     * There are multiple layers in the player state machine.
-    * <img src="Images/5.jpg" style="width:420px"></img>
-    * <img src="Images/6.jpg" style="width:420px"></img>
-    * <img src="Images/7.jpg" style="width:420px"></img>
-    * <img src="Images/8.jpg" style="width:420px"></img>
-
-* Player movement
-  * Walking && Running && Aiming
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594065/02a72084-c429-11e5-84b7-39de1a51d991.jpg" style="width:420px"></img>
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594070/02be2234-c429-11e5-874a-880a710742c1.jpg" style="width:420px"></img>
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594601/c34c19f0-c42b-11e5-9c90-2f2e384030ef.jpg" style="width:420px"></img>
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594069/02b960be-c429-11e5-90b1-49e0ff6be56a.jpg" style="width:420px"></img>
-  * Jumping
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594068/02b1568a-c429-11e5-9bbe-cee8760c079b.jpg" style="width:420px"></img>
-  * Dying
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594067/02abdd9a-c429-11e5-887f-0c830090ff49.jpg" style="width:420px"></img>
-    * <img src="https://cloud.githubusercontent.com/assets/5276065/12594066/02aa6d34-c429-11e5-86ce-ef458bb7f7c3.jpg" style="width:420px"></img>
+    * <img src="Images/State_Machine_Player.png" style="width:420px"></img>
+    * <img src="Images/State_Machine_Zombie.png" style="width:420px"></img>
 
 * Gun model
-  * The original gun model (AK-47) was from Unity Assets Store
-  * **Shooting animation are added** by setting keyframes in unity3d animation panel
-  ![img](Images/12.jpg)
+  * **AK47** and **M4A1**
+  * **Shooting animation are added**
+  * <img src="Images/AK47.png" height="320px"></img> <img src="Images/M4A1.png" height="320px"></img>
+    
+## References
+* [Unreal Engine AI with Behavior Trees | Unreal Engine](https://www.youtube.com/watch?v=iY1jnFvHgbE)
+* [Game Development in C++ and Unreal Engine (Stanford CS193U)](https://www.tomlooman.com/stanford-cs193u/)
+* [Learn Unreal Engine (with C++) - Full Course for Beginners](https://www.youtube.com/watch?v=LsNW4FPHuZE)
+* [Blueprints vs. C++: How They Fit Together and Why You Should Use Both](https://www.youtube.com/watch?v=VMZftEVDuCE)
+* [Creating A First Person Shooter Game (FPS) With Unreal Engine 4](https://www.youtube.com/watch?v=DywBqQtTHMo&list=PLL0cLF8gjBprG6487lxqSq-aEo6ZXLDLg)
+* [Unreal Engine Beginner Tutorial: Building Your First Game](https://www.youtube.com/watch?v=QJpfLkEsoek)
 
-* Bullet effects
-  * Bullets hitting different materials will cause different effects
-    * Wood
-    <img src="Images/13.jpg" style="width:510px"></img>
-    * Ground
-    <img src="Images/14.jpg" style="width:510px"></img>
-    * Metal
-    <img src="Images/15.jpg" style="width:510px"></img>
-    * Concrete
-    <img src="Images/16.jpg" style="width:510px"></img>
-    * Water
-    <img src="Images/17.jpg" style="width:510px"></img>
-    
-    
 ## License
 
 [MIT License](https://github.com/Armour/Multiplayer-FPS/blob/master/LICENSE)
