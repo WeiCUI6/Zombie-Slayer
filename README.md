@@ -34,11 +34,11 @@ Game Description: a First-Person Shooter game which you can use your weapons (AK
     * **Shoot** without affecting lower part body
       * This makes the player walk or run more naturally. It uses interpolation function to map different combinations of user input to different animations.
       * <img src="Images/Hold_Control.png" height="320px"></img>
+      * <img src="Images/IDLE.png" height="320px"></img>
       * <img src="Images/Hold_Walk.png" height="320px"></img>
       * <img src="Images/Sprint_Left.png" height="320px"></img>
       * <img src="Images/Sprint_Right.png" height="320px"></img>
       * <img src="Images/Sprint_Straight.png" height="320px"></img>
-      * <img src="Images/IDLE.png" height="320px"></img>
 
   * **State Machine**
     * There are multiple layers in the player state machine.
